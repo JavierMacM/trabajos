@@ -2,82 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Laboratorio 1</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <title>Laboratorio 3</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#sobremi">Sobre mi</a> |
-        <a href="#preguntas">Preguntas</a> |
-        <a href="#conceptos">Conceptos</a> |
-        <a href="#bibliografia">Bibliografia</a>
-      </nav>
-    </header>
-    <!---empiezan las secciones-->
-    <section id="sobremi">
-      <center><h2>Sobre mi</h2></center>
-      <p>
-      Nombre completo: Javier Mendez Martinez<br>
-      Matricula: A01703446<br>
-      Entre mis gustos estan ver television, aventurarme al campo a pasar el dia fuera de la ciudad y practicar algunos deportes
-      como basketball, box, artes marciales, billar, etc.<br>
-      El interes por la carrera de sistemas computacionales lo tome desde la preparatoria, pues ahi fue donde accidentalmente descubri
-      la programacion, la cual me agrado despues de ver el potencial que tiene la habilidad de programar
-      </p>
-      <center><img src="javier.png" alt="javier"></center>
-    </section>
-    <section id="preguntas">
-      <center><h2>Preguntas</h2></center>
-      <p>
-      <strong>¿Cuál es la diferencia entre Internet y la World Wide Web?</strong><br>
-      Que internet es la conexión de dispositivos que siguen un mismo protocolo (TCP/IP) y
-      WWW es el servicio que nos permite ver las páginas que comparten/crean usuarios con la conexión a internet[12]<br>
+    <div class="topnav">
+      <a href="../index.html">Otros labs</a> |
+      <a href="index.html">Inicio</a>
+      <a href="aboutme.html">Sobre mi</a>
+      <a href="questions.html">Preguntas</a>
+    </div>
 
-      <strong>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</strong><br>
-      Controlar los datos de diferentes formas, con los metodos se pueden hacer cambios en los datos, recuperarlos, borrarlos.<br>
-
-      <strong>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</strong><br>
-      Post, porque no permite al cliente ver los datos en la URL (como usando get).<br>
-
-      <strong>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</strong><br>
-      Get, solo carga la URL.<br>
-
-      <strong>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</strong><br>
-      El código 200 es una respuesta satisfactoria, significa que la solicitud fue procesada con éxito, no hay error alguno.<br>
-
-      <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</strong><br>
-      No, ese error está en el servidor.<br>
-
-      <strong>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</strong><br>
-      Si, probablemente alguna parte del sitio está mal estructurada o contiene errores y a consecuencia el servidor no sabe cómo manejar el problema.<br>
-
-      <strong>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</strong><br>
-      Que un atributo este despreciado significa que el trabajo con CSS resulta mas efectivo que trabajar con los atributos, algunos de los despreciados en HTML5 son:
-      Rev, charset, shape, coords, longdesc, target, nohref, profile, version, name, scheme, archive, classid, codebase<br>
-
-      <strong>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</strong><br>
-      Que algunas herramientas de HTML4 dejaron de ser utilizadas en HTML5, además de que se procura que el código este “limpio” en HTML5<br>
-
-      <strong>¿Qué componentes de estructura y estilo tiene una tabla?</strong><br>
-      La tabla tiene filas y columnas, bordes y colores.<br>
-
-      <strong>¿Cuáles son los principales controles de una forma HTML5?</strong><br>
-      Input, lista de selección, área de texto, botones de enviar y deshacer<br>
-
-      <strong>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</strong><br>
-      En Google chrome el soporte debe ser alto, pues es uno de los navegadores mas utilizados en todo el mundo.<br>
-
-      <strong>Sobre el ciclo de vida y desarrollo de los sistemas de información:</strong><br>
-      <strong>¿Cuál es el ciclo de vida de los sistemas de información?</strong><br>
-      Planificación, desarrollo, integración, mantenimiento, obsolescencia[13]<br>
-
-      <strong>¿Cuál es el ciclo de desarrollo de sistemas de información?</strong><br>
-      Planificación, análisis de requerimientos y requisitos, diseño del sistema, implementación y prueba de unidades,
-      integración y prueba del sistema, operación y mantenimiento[13]
-      </p>
-    </section>
-    <section id="conceptos">
-      <center><h2>Conceptos</h2></center>
+    <section class="content">
+      <h2>Conceptos</h2>
       <h4>URL</h4>
       URL son las siglas en inglés de “Uniform Resource Locator” y prácticamente es la dirección de cualquier elemento (página visible) en el internet.[1]
       <h4>MIME</h4>
@@ -148,9 +85,8 @@
       AJAX es el acrónimo de “Asynchronous Javascript and XML”, en corto AJAX permite que un servidor y un navegador intercambien información (XML, JSON, HTML)
       de forma asíncrona mediante programas escritos en Javascript.[11]
     </section>
-    <section id="bibliografia">
-      <p>
-        <strong>Bibliografia:</strong><br>
+    <section class="content">
+        <h2>Bibliografia:</h2>
         [1]https://tecnologia-informatica.com/que-es-url/<br>
         [2]https://es.ccm.net/contents/118-mime-extensiones-multiproposito-de-correo-de-internet<br>
         [3]https://developer.mozilla.org/es/docs/Web/HTTP/Status<br>
@@ -164,11 +100,9 @@
         [11]https://www.digitallearning.es/blog/que-es-ajax/<br>
         [12]https://developer.mozilla.org/es/docs/Glossary/World_Wide_Web<br>
         [13]https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/
-      </p>
     </section>
-    <!--terminan las secciones-->
     <footer>
-      <p>Esta pagina fue elaborada utilizando el editor ATOM, encuentralo en: <a href="https://atom.io" target="_blank">https://atom.io/</a>
+      <p>Esta pagina fue elaborada utilizando el editor ATOM, encuentralo en: <a href="https://atom.io" target="_blank">https://atom.io/</a></p>
     </footer>
   </body>
 </html>
