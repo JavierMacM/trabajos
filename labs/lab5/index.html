@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio 5</title>
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <a href="../index.html">Otros labs</a> |
+    <a href="exercise1.html">Valida contrasena</a>
+    <a href="exercise2.html">Compra productos</a>
+    <a href="exercise3.html">Genera tu historia</a>
+
+    <center><h1>Laboratorio 5 de DAW</h1></center>
+    <!--Preguntas-->
+    <h4>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h4>
+    Porque los datos introducidos por los usuarios idealmente siempre deberian ser correctos, pero lamentablemente el ser humano esta propenso a
+    cometer errores y la parte web no se escapa, entonces, para asegurarnos de que los datos tengan el formato adecuado usamos JS, asi nosotros
+    mantenemos la integridad de los datos y prevenimos al usuario de seguir cometiendo errores.
+
+    <h4>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h4>
+    Mediante inyeccion de codigo o deshabilitar JS en el navegador, hacer uso de un proxy en medio del flujo de comunicacion [1].
+
+    <h4>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
+    Porque segun Ba Yin Min (2017) la validacion se deberia de hacer tanto  del lado del cliente como del servidor, entonces, la validacion desde el
+    lado del cliente permite que los datos introducidos sean adecuados de acuerdo al formato, y la validacion del lado del servidor se asegura de
+    la integridad de los mismos datos y decide si los toma o los rechaza [2].
+
+    <h4>Referenceias</h4>
+    [1] http://www.forosdelweb.com/f45/saltar-validacion-javascript-626969/
+    [2] https://medium.com/@BaYinMin/application-security-what-is-server-side-input-validation-why-is-it-needed-anyway-e0613c733548
+
+
+  </body>
+</html>
