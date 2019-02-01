@@ -43,8 +43,7 @@ function createStory(){
   var ocupacion = document.getElementById("ocupation").value;
   var historia;
 
-  historia = "Habia una vez una persona de nombre " + nombre + " de " + edad + " anios de edad que a pesar de su edad no dejaba de hacer lo que le gusta,
-  jugaba " + videojuego + " y practicaba " + deporte + ", pero su verdadera pasion era " + ocupacion + ", asi vivio feliz con su mascota " + animal;
+  historia = "Habia una vez una persona de nombre " + nombre + " de " + edad.toString() + " anios de edad, pero a pesar de su edad no dejaba de hacer sus actividades favoritas, jugaba " + videojuego + " y practicaba " + deporte + ", pero su verdadera pasion era " + ocupacion + ", asi vivio feliz con su mascota " + animal;
 
   document.getElementById("history").innerHTML = historia;
 }
