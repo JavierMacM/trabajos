@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <div class="navBar">
+      <a href="../index.html">Otros labs</a>
+      <a href="index.html" class="active">Pruebas de funciones</a>
+      <a href="questions.html">Preguntas</a>
+    </div>
+
+    <div class="content">
+      <div class="waterMark">JavierMacM</div>
+      <div class="demonstration">
+        <p>Ejemplo del uso de setInterval: </p><br>
+        <p id="timeDisplay"></p>
+      </div>
+      <div class="demonstration">
+        <p id="font2change" onmouseover="changeFont()" onmouseout="changeFontBack()">Cambia las letras al pasar por encima de este texto</p>
+      </div>
+      <div class="demonstration">
+        <form name="myForm" onsubmit="validateForm()">
+          Llena tus datos <br><br>
+          Nombre: <input type="text" name="name"><br><br>
+          Edad: <input type="number" name="age" min="0" max="150"><br><br>
+          Genero: <input type="radio" name="gender">Masculino <input type="radio" name="gender">Femenino<br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="demonstration">
+        <p>Ejemplo del uso de drag and drop: </p><br>
+        <div id="box" class="box" draggable="true" ondragover="allowDrop(event)" ondragstart="drag(event)">
+          <p>Caja1</p>
+        </div>
+        <div id="box" class="box" draggable="true" ondragover="allowDrop(event)" ondragstart="drag(event)">
+          <p>Caja2</p>
+        </div>
+        <div id="box" class="box" draggable="true" ondragover="allowDrop(event)" ondragstart="drag(event)">
+          <p>Caja3</p>
+        </div>
+        <div id="box" class="bigBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p>Trae la caja que gustes</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>Laboratorio 6 / 4 de febrero de 2019 / JavierMacM</footer>
+
+    <script type = "text/javascript" src = "js/lab6.js"></script>
+  </body>
+</html>

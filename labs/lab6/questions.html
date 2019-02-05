@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio 6</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="navBar">
+      <a href="../index.html">Otros labs</a>
+      <a href="index.html">Pruebas de funciones</a>
+      <a href="questions.html" class="active">Preguntas</a>
+    </div>
+
+    <div class="content">
+      <h1>Laboratorio 6</h1>
+
+      <h4>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</h4>
+      <h5>Hay 5 diferentes valores para la propiedad position:</h5>
+      <h5>Static:</h5>
+      Cuando se habla de posicionamiento de elementos en HTML, static es el valor por default, incluso aunque no escribamos
+      explicitamente "position: static" HTML lo trae incorporado de forma implicita.<br>
+      Con static lo que se busca es mantener el elemento deseado en una posicion relativa al flujo del documento sin que se
+      le pueda hacer modificacion para tratar de moverlo hacia otro lugar.
+      <h5>Relative:</h5>
+      Con la posicion relative se mantiene el elemento en la posicion correspondiente al flujo del documento HTML, pero en esta ocasion
+      podemos haceer uso de la propiedades top, left, bottom, right para ajustar la posicion del elemento conforme a nuestra conveniencia.
+      <h5>Fixed:</h5>
+      La posicion fixed permite que un elemento se mantenga en un lugar fijo a pesar de que se haga scroll.<br>
+      Como un buen ejemplo de esto eatan las barras de navegacion como en Facebook, que te acompanan a pesar de que sigas bajando para ver contenido.
+      <h5>Absolute:</h5>
+      Absolute le da al elemento la facultad de mantenerse en una posicion, solo que en esta ocasion no es relativa a la pagina, si no al elemento dentro
+      del cual este contenido, aunque si no hubiera elemento, si lo haria respecto a la pagina.
+      <h5>Sticky:</h5>
+      Sticky es la combinacion de relative con fixed, pues el elemento se vuelve fixed despues de que el elemento llega a una posision de la pagina
+      donde pueda convertirse en fixed, por ejemplo, despues de haber hecho scroll a media pagina.<br>[1]
+
+      <h4>¿Cuáles son los valores estándar para la propiedad visibility?</h4>
+      <h5>Hay tres valores estandar:</h5>
+      <h5>visible:</h5>
+      visible permite que el elemento se pueda ver.
+      <h5>hidden:</h5>
+      hidden esconde el elemento, pero el espacio que ocupa se mantiene intacto.
+      <h5>collapse:</h5>
+      collapse sirve para "borrar" columnas o filas en una tabla, lo que hace es que las oculta de vista y quita el espacio que ocupaban para
+      que se utilice por otros elementos.<br>[2]
+
+      <h4>¿Qué es el zIndex y para qué sirve?</h4>
+      Z-index funciona para colocar elementos unos encima de otros, con esta propiedad definimos cual elemento va encima de otros.
+
+      <h4>Bibliografia:</h4>
+      [1] https://www.w3schools.com/css/css_positioning.asp
+      [2] https://www.w3schools.com/cssref/pr_class_visibility.asp
+    </div>
+
+    <footer>Laboratorio 6 / 4 de febrero de 2019 / JavierMacM</footer>
+
+    <script type = "text/javascript" src = "js/lab6.js"></script>
+
+  </body>
+</html>
