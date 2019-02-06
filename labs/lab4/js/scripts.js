@@ -52,7 +52,7 @@ function createTable(number)
 function deployTest2()
 {
   var txt;
-  var myPrompt = prompt("Ingresa el resultado de la suma de " ":", "ingresa tu numero aqui");
+  var myPrompt = prompt("Ingresa el resultado de la suma aleatoria");
   var number = parseInt(myPrompt);
   if (number == null) {
       txt = "No me diste ningun numero";
