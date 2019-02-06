@@ -1,5 +1,4 @@
-//ventana emergente
-function deployPrompt()
+function deployTest1()
 {
   var txt;
   var myPrompt = prompt("Ingresa tu numero:", "ingresa tu numero aqui");
@@ -12,7 +11,6 @@ function deployPrompt()
   }
 }
 
-//funcion para crear la tabla
 function createTable(number)
 {
   var operationTable = document.getElementById("operationTable");
@@ -51,9 +49,35 @@ function createTable(number)
   operationTable.appendChild(tb1);
 }
 
-//funcion para borrar la tabla
-function deleteTable()
+function deployTest2()
 {
-  var table = document.getElementById("operationTable");
-  document.removeChild(table);
+  var txt;
+  var myPrompt = prompt("Ingresa el resultado de la suma de " ":", "ingresa tu numero aqui");
+  var number = parseInt(myPrompt);
+  if (number == null) {
+      txt = "No me diste ningun numero";
+  } else {
+      txt = "Correcto"
+  }
+  document.getElementById("operationTable").innerHTML = txt;
+}
+
+function deployTest3()
+{
+
+}
+
+function deployTest4()
+{
+
+}
+
+function deployTest5()
+{
+
+}
+
+function deployTest6()
+{
+
 }
