@@ -18,15 +18,18 @@ function validateForm() {
   var name = document.forms["myForm"]["name"].value;
   var age = document.forms["myForm"]["age"].value;
   var gender = document.forms["myForm"]["gender"].value;
-  var message = "Gracias, datos completos";
-  if (name == "") {
+  var message = "";
+  if (name === "") {
     message = "Por favor escribe tu nombre \n";
   }
-  if (age == "") {
+  if (age === "") {
     message += "Por favor ingresa tu edad\n";
   }
-  if (gender == "") {
+  if (gender === "") {
     message += "Por favor dame tu genero";
+  }else
+  if(name !== "" && age !== "" && gender !== ""){
+    message = "Gracias, datos completos"
   }
   alert(message);
   return;
