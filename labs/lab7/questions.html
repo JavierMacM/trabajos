@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio 7</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <div class="navbar-fixed">
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#q1">Java vs JS</a></li>
+        <li><a href="#q2">Date</a></li>
+        <li><a href="#q3">Arrays</a></li>
+        <li><a href="#q4">Funcion local</a></li>
+        <li><a href="#q5">Variables globales</a></li>
+        <li><a href="#q6">Encontrar patrones</a></li>
+        <li><a href="#q7">Material design</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper brown lighten-2">
+          <a href="#" class="brand-logo right">Lab 7</a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="../index.html">Otros labs</a></li>
+            <li  class="active"><a href="questions.html">Preguntas</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Listado<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--Bloque de preguntas-->
+    <section class="container">
+      <h1 class="center">Bloque de preguntas</h1>
+      <h4 id="q1">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h4>
+      <div class="divider row z-depth-1 z-depth-1"></div>
+        Javascript solo corre en navegadores mientras que Java lo hace en una maquina virtual<br>
+        El codigo de Java se compila y el de JS "lo hace al tiempo de ejecucion"<br>
+        JS esta disenado para modelar el comportamiento de paginas web<br>
+        Con Java se puede hacer todo tipo de aplicaciones<br>
+      [1]
+      <h4 id="q2">¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h4>
+      <div class="divider row z-depth-1"></div>
+        getDate(): Retorna el dia del mes<br>
+        getHours(): Retorna la hora (de las 0 a las 23)<br>
+        getMinutes(): Retorna los minutos<br>
+        getTime(): Retorna la cantidad de milisegundos trasncurridos desde el 1/1/1970 hasta la fecha establecida<br>
+        now(): Hace lo que getTime() pero desde la fecha actual<br>
+        toJSON(): Retorna la fecha en una cadena en formato JSON<br>
+
+      [2]
+      <h4 id="q3">¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h4>
+      <div class="divider row z-depth-1"></div>
+        concat(): Sirve para unir n cantidad de arreglos<br>
+        entries(): Retorna pares del arreglo (posicion, valor)<br>
+        forEach(): Sirve para ejecutar una funcion por cada elemento del arreglo<br>
+        indexOf(value): Retorna la posicion de un elemento del arreglo despues de haberle dicho que valor debe buscar<br>
+        shift(): Retorna y remueve el primer elemento del arreglo<br>
+
+      [3]
+      <h4 id="q4">¿Cómo se declara una variable con alcance local dentro de una función?</h4>
+      <div class="divider row z-depth-1"></div>
+        Para que una variable sea local se tiene que declarar dentro de la funcion en la que se necesita. <br>
+        Ejemplo: <br>
+        var x; <br>
+        function blabla(){} <br><br>
+        Para que una variable sea global se tiene que declarar por fuera de la funcion. <br>
+        Ejemplo:<br>
+        function blabla(){ var x; } <br>
+        [4]
+
+      <h4 id="q5">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h4>
+      <div class="divider row z-depth-1"></div>
+        Que la variable puede ser alterada y entonces si otras funciones hacen uso de la variabloe puede haber resultados no deseados,
+        ademas si en la funcion se creara una variable local pero con el mismo nombre puede haber fallos porque puede que se trabaje con la variable
+        que no querramos. <br>
+        [5]
+
+      <h4 id="q6">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h4>
+      <div class="divider row z-depth-1"></div>
+        Los metodos search o test pueden ser utiles, pues ambos buscan patrones dentro de una cadena, y ..., por que pueden ser utiles?<br>
+        Porque con la busqueda de patrones nuestra aplicacion es mas flexible para manejar los datos, ya que permite que pueda haber un dato
+        introducido de diferentes formas y trabajar con el no va a causar el mismo conflicto. <br>
+        [6]
+
+      <h4 id="q7">¿Qué es material design?</h4>
+      <div class="divider row z-depth-1"></div>
+        Es un lenguaje visual que aplica las reglas generales del buen diseno para el desarrollo de aplicaciones web, sin comprometer la
+        experiencia de usuario sea cual seas el navegador en el que se utilice la aplicacion.<br>
+        [7]
+        <div class="row"></div>
+
+    </section>
+    <footer class="page-footer brown lighten-2">
+      <div class="row container">
+        <h4>Bibliografia</h4>
+
+          [1] https://www.java.com/en/download/faq/java_javascript.xml <br>
+          [2] https://www.w3schools.com/jsref/jsref_obj_date.asp <br>
+          [3] https://www.w3schools.com/jsref/jsref_obj_array.asp <br>
+          [4] https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript <br>
+          [5] https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript <br>
+          [6] https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions <br>
+          [7] https://material.io/design/introduction/#principles
+      </div>
+       <div class="footer-copyright">
+         <div class="container">
+         Creado con materialize
+         </div>
+       </div>
+     </footer>
+
+     <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+     <script src = "js/materialize.min.js"></script>
+     <script>
+       $(document).ready(function() {
+         $(".dropdown-trigger").dropdown();
+       });
+     </script>
+
+  </body>
+</html>
