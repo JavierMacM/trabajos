@@ -1,0 +1,34 @@
+	Ejecuta la siguiente instrucción : sp_help materiales
+
+	¿Que muestra la instrucción? 
+
+Desplego la ventana "Results" y "Messages", donde aparece informacion a detalle sobre el nombre de la tabla, campos y constraints.
+
+
+	Ejecuta las instrucciones que contiene el archivo crear.sql 
+
+	¿Qué efecto tuvo esta acción?
+
+Se crearon las 4 tablas definidas en el script.
+
+	¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+
+Que al manejar un bloque de intrucciones, las acciones definidas por nosotros se vuelven mas facil de ejecutar.
+
+	¿Qué relación tienen con las tablas de la base de datos?
+
+Los archivos contienen los datos de acuerdo a las especificaciones de las tablas.
+
+	¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+	
+Los datos en materiales.csv correponden al mismo dominio y grado que la tabla materiales.
+
+
+	Después de la ejecución del comando, vuelve a revisar el contenido de la tabla materiales mediante el uso de una consulta. 
+
+	SELECT  * FROM Materiales
+
+
+	¿Qué sucedió?
+
+La tabla ahora esta cargada con los datos del archivo csv.

@@ -13,17 +13,40 @@
     <section class="content">
       <h1>Bloque de preguntas</h1>
       <h4>¿Qué hace la función phpinfo()?</h4>
+        De acuerdo a la pagina oficial de PHP, phpinfo() muestra informacion sobre la configuracion actual de php,
+        ademas es una valiosa herramienta de depuración ya que contiene todos valores EGPCS (Environment, GET, POST, Cookie, Server).<br>
+        ejemplo: phpinfo ([ int $what = INFO_ALL ] ) : bool <br>
+        El parametro what es para personalizar el resultado de salida y sus posibles valores son: INFO_GENERAL, INFO_CREDITS, INFO_CONFIGURATION.
+        INFO_MODULES, INFO_ENVIRONMENT, INFO_VARIABLES, INFO_LICENSE, INFO_ALL. [1]
+
       <h4>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</h4>
+        Para manejar un proyecto web profesional lo ideal es manejar las diferentes etapas de desarrollo desde distintos servidores, entre estos
+        se encuentran: <br>
+        <h6>Servidor de desarrollo</h6>
+        Estos servidores deben simular las condiciones del servidor en el que va a ser puesto en marcha el proyecto en última instancia.<br>
+
+        <h6>Servidores de prueba</h6>
+        Como es necesario probar el trabajo de cada integrante de un equipo para verificar la funcionalidad, este tipo de servidores comunmente
+        esta en linea bajo un acceso restringido visible solo por el personal de desarrollo.
+
+        <h6>Servidores de ensayo (Staging)</h6>
+        En este servidor serán puestos en marcha todos los cambios probados previamente en el servidor de pruebas, solo que esta vez el acceso esta abierto al publico,
+        de esta forma cuando se solicite un cambio el cliente puede ver aquí los cambios y decidir si está conforme o no con el trabajo realizado antes de pasarlos al sitio en producción.
+
+        <h6>Servidores de producción</h6>
+        Es donde se va a poner en marcha el proyecto para el público en general, accesible desde la web para cualquier usuario que lo desee.
+        En este punto todo el código ha sido probado por el personal de desarrollo, por el cliente y aceptado finalmente para ser puesto en marcha. [2]
+
       <h4>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor?</h4>
+        El servidor funciona con distintos lenguajes de programacion que los que hay del lado del cliente, ejemplo de estos lenguajes son:
+        php, node.js, ruby, python. El script se ejecuta cuando hay cierta interaccion entre el usuario y el sistema, ocasionanado llamadas
+        al servidor para que este pueda responder al llamado. [3]
+
       <h4>Bibliografia</h4>
       <ul>
-        <li>[1] https://www.java.com/en/download/faq/java_javascript.xml</li>
-        <li>[2] https://www.w3schools.com/jsref/jsref_obj_date.asp</li>
-        <li>[3] https://www.w3schools.com/jsref/jsref_obj_array.asp</li>
-        <li>[4] https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript</li>
-        <li>[5] https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript</li>
-        <li>[6] https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions</li>
-        <li>[7] https://material.io/design/introduction/#principles</li>
+        <li>[1] http://php.net/manual/es/function.phpinfo.php</li>
+        <li>[2] https://styde.net/tipos-de-servidores-y-entornos/</li>
+        <li>[3] https://techlandia.com/diferencia-lado-del-cliente-programacion-del-lado-del-servidor-sobre_151711/</li>
       </ul>
     </section>
   </body>
