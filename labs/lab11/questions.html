@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio 11</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+  <body>
+    <!--Barra de navegacion-->
+    <a href="../index.php">Otros labs</a> |
+    <a href="index.php"> Pruebas </a>
+    <!--Bloque de preguntas-->
+    <section class="content">
+      <h1>Bloque de preguntas</h1>
+      <h4>¿Por qué es una buena práctica separar el controlador de la vista?</h4>
+      <p>Porque se facilita mantener el codigo y se hace mas legible para otros programadores</p>
+
+      <h4>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?</h4>
+      <p>
+        <ul>
+          <li>PUT: se utiliza para enviar datos a un servidor para crear / actualizar un recurso.</li>
+          <li>HEAD: es casi idéntico a GET, pero sin el cuerpo de respuesta.</li>
+          <li>DELETE: borra el recurso especificado.</li>
+          <li>OPTIONS: describe las opciones de comunicación para el recurso objetivo.</li>
+        </ul>
+        <br>
+        [1]
+      </p>
+
+      <h4>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</h4>
+      <p>
+        <ul>
+          <li>strstr(string cadena,string subcadena) sirve para buscar una cadena dentro de otra cadena, util para buscar patrones en textos</li>
+          <li>file_get_contents() obtiene todos los contenidos de un archivo dado</li>
+        </ul>
+        <br>
+        [2]
+      </p>
+
+      <h4>¿Qué es XSS y cómo se puede prevenir.</h4>
+      <p>Los ataques de secuencias de comandos entre sitios (XSS) son un tipo de inyección, en la que las secuencias de comandos malintencionadas
+        se inyectan en sitios web benignos y de confianza. Los ataques XSS ocurren cuando un atacante usa una aplicación web 
+        para enviar código malicioso, generalmente en forma de un script del lado del navegador, a un usuario final diferente. [3]</p>
+
+      <h4>Bibliografia</h4>
+      <ul>
+        <li>[1] https://www.w3schools.com/tags/ref_httpmethods.asp</li>
+        <li>[2] https://en.wikiversity.org/wiki/25_Essential_PHP_Functions</li>
+        <li>[3] https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)</li>
+      </ul>
+    </section>
+  </body>
+</html>
