@@ -4,6 +4,7 @@ IF EXISTS (SELECT name FROM sysobjects
 GO
  CREATE PROCEDURE creaMaterial
 	@uclave NUMERIC(5,0),
+	@udescripcion VARCHAR(50),
 	@ucosto NUMERIC(8,2),
 	@uimpuesto NUMERIC(6,2)
 AS
