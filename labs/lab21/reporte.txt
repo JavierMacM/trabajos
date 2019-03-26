@@ -1,0 +1,37 @@
+¿Qué hace el primer bloque del código (bloque del IF)? 
+*Revisa si existe el procedure creaMateriales y lo elimina en caso que exista
+
+¿Para qué sirve la instrucción GO? 
+*El batch que preceda a go se ejecuta n veces
+
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+*Recibe clave, descripcion, costo e impuesto y modifica la tabla materiales  
+
+EXECUTE queryMaterial 'Lad',20 
+Explica en tu reporte qué recibe como parámetro este procedimiento y qué hace.
+*Ejecuta un query que nos da los materiales cuyo nombre contenga el patron "Lad" y que cuestan mas de $20
+
+¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación cliente-servidor? 
+*Facilita el entendimiento del codigo, ayuda a crear tareas especificas
+
+¿Qué ventajas tiene utilizar SP en un proyecto?
+*Evitas SQL injection, es mas simple, no ocupas PHP ni conectarte con la base de datos
+
+Crea un Procedure para un Lab pasado
+IF EXISTS (SELECT name FROM sysobjects
+	WHERE name = 'creaFruta' AND type = 'P')
+	DROP PROCEDURE creaFruta
+GO
+ CREATE PROCEDURE creaFruta
+	@uid NUMERIC(11),
+	@uname VARCHAR(50),
+	@uunits NUMERIC(11),
+	@uquantity NUMERIC(11),
+	@uprice NUMERIC(11),
+	@ucountry VARCHAR(50)
+AS
+	INSERT INTO Fruit VALUES(@uid, @uname, @uunits, @uquantity, @uprice, @ucountry)
+GO
+
+EXECUTE creaFruta 9,'Pera',6,1,45,'Madagascar' 
+select * from Fruit
