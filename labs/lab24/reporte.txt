@@ -1,0 +1,22 @@
+LAB 24
+¿Que pasa cuando deseas realizar esta consulta? 
+--La consulta es exitosa
+
+¿Que pasa cuando deseas realizar esta consulta? 
+--La consulta no es exitosa, se queda en estado de espera
+
+Explica por qué ocurre dicho evento. 
+--La consulta no es exitosa, se queda en estado de espera, ;a transaccion aun no ha terminado
+
+¿Qué ocurrió y por qué? 
+--El registro se puede visualizar porque la transaccion fue cancelada
+
+¿Para qué sirve el comando @@ERROR?, revisa la ayuda en línea 
+--Retorna 0 si no se encuentran errores entre las operaciones de la transaccion
+
+¿Qué hace la transacción? 
+--Trata de insertar nuevos registros a la tabla ClientesBanca
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué. 
+--Mando un mensaje de que se necesita rollback, de lo cual se asume que el error estuvo en que encontro una llave duplicada entre las operaciones
+
