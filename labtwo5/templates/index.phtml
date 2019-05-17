@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Laboratorio 25</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='../styles/styles.css' rel='stylesheet' type='text/css'>
+        <link href='../styles/materialize.min.css' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Laboratorio 25</h1>
+        <div>Servicios web REST con php</div>
+
+        <?php if (isset($name)) : ?>
+            <h2>Hello <?= htmlspecialchars($name); ?>!</h2>
+        <?php else: ?>
+            <form class="col s12" method="post" >
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">email</i>
+                  <input id="icon_prefix" type="text" class="validate" name="email">
+                  <label for="icon_prefix">Correo electronico</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">lock</i>
+                  <input id="password" type="password" class="validate" name="password">
+                  <label for="password">Contrasena</label>
+                </div>
+              </div>
+              <div class="row">
+                  <button class="btn waves-effect waves-light green" type="submit" name="envio">Enviar</button>
+              </div>
+            </form>
+            <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>
+        <?php endif; ?>
+    </body>
+    <script type="text/javascript" src="../styles/materialize.min.js"></script>
+</html>

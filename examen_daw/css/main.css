@@ -1,0 +1,40 @@
+body
+{
+    background-image: url(https://wallpapercave.com/wp/wp1818572.jpg);
+    background-size: cover;
+    color:#fff;
+}
+img{
+    height: 10vmax;
+}
+.login
+{
+    margin-top: 100px;
+}
+.login .card
+{
+    background: rgba(0, 0, 0, .6);
+}
+.login label
+{
+    font-size: 16px;
+    color: #ccc;
+}
+.login input
+{
+    font-size: 22px !important;
+    color:#fff;
+}
+.card-action
+{
+    font-family: "Avenir";
+}
+.row
+{
+    width: 100vmin !important;
+            
+}
+.modal-trigger
+{
+    position: fixed;
+}

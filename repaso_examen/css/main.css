@@ -1,0 +1,98 @@
+body
+{
+    background-image: url(https://wallpapercave.com/wp/wp1818572.jpg);
+    background-size: cover;
+    color:#fff;
+}
+img{
+    height: 10vmax;
+}
+.login
+{
+    margin-top: 100px;
+}
+.login .card
+{
+    background: rgba(0, 0, 0, .6);
+}
+.login label
+{
+    font-size: 16px;
+    color: #ccc;
+}
+.login input
+{
+    font-size: 22px !important;
+    color:#fff;
+}
+.login button:hover
+{
+    padding: 0px 40px;
+}
+.card-action
+{
+    font-family: "Avenir";
+}
+.row
+{
+    width: 100vmin !important;
+            
+}
+.modal-trigger
+{
+    position: fixed;
+}
+.zoom 
+{
+  padding: 50px;
+  transition: transform .5s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover 
+{
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#preloader
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: darkred;
+    z-index: 1000;
+}
+#preloader span{
+    height: 2vmax;
+    width: 2vmax;
+    background: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 45vh;
+    border-radius: 50%;
+    animation: wave 2s ease-in-out infinite;
+}
+
+#preloader span:nth-child(1){
+    left: 35vw;
+    animation-delay: 0s;
+}
+
+#preloader span:nth-child(2){
+    left: 45vw;
+    animation-delay: 0.1s;
+}
+
+#preloader span:nth-child(3){
+    left: 55vw;
+    animation-delay: 0.2s;
+}
+
+#preloader span:nth-child(4){
+    left: 65vw;
+    animation-delay: 0.3s;
+}
